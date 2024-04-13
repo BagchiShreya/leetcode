@@ -13,7 +13,6 @@ class Solution {
             else
                 i++;
         }
-        
         return arr;
     }
 }
