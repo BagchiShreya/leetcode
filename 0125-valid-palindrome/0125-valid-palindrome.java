@@ -10,7 +10,6 @@ class Solution {
         for (int i = newStr.length() - 1; i >= 0; i--) {
             revstr.append(newStr.charAt(i));
         }
-        boolean palindrome = false;
         if (revstr.toString().equals(newStr.toString())) 
             return true;
         else 
