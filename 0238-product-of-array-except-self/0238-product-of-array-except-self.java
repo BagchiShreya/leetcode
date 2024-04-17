@@ -10,12 +10,10 @@ class Solution {
             else
                 prod *= nums[i];
         }
-        if(zeroes > 1) {
+        if(zeroes > 1)
             Arrays.fill(ans, 0);
-        } 
-        else if(zeroes == 1) {
+        else if(zeroes == 1) 
             ans[index] = prod;
-        } 
         else {
             for(int i = 0; i < nums.length; i++) {
                 ans[i] = prod / nums[i];
