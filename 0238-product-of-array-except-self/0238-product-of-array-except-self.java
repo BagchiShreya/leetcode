@@ -1,9 +1,8 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        int n = nums.length;
         int prod = 1, zeroes = 0, index = -1;
-        int[] ans = new int[n];
-        for(int i = 0; i < n; i++) {
+        int[] ans = new int[nums.length];
+        for(int i = 0; i < nums.length; i++) {
             if(nums[i] == 0) {
                 zeroes++;
                 index = i;
@@ -18,7 +17,7 @@ class Solution {
             ans[index] = prod;
         } 
         else {
-            for(int i = 0; i < n; i++) {
+            for(int i = 0; i < nums.length; i++) {
                 ans[i] = prod / nums[i];
             }
         }
