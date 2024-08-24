@@ -10,6 +10,7 @@ class Solution {
             }
         }
         return false;*/
+        
         if(s.length()!=goal.length())
             return false;
         String str=s+s;
