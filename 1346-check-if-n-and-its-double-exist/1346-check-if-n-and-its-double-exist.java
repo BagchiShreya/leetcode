@@ -1,8 +1,5 @@
 class Solution {
     public boolean checkIfExist(int[] arr) {
-        /*for(int i=0;i<arr.length;i++)
-            arr[i]=Math.abs(arr[i]);
-        Arrays.sort(arr);*/
         for(int j=0;j<arr.length;j++){
             for(int i=0;i<arr.length;i++){
                 if(arr[i]==2*arr[j]&&i!=j)
