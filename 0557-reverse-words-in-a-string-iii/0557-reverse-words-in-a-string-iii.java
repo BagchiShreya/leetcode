@@ -3,8 +3,8 @@ class Solution {
         String str,word="";
         String arr[]=s.split(" ");
         for(int i=0;i<arr.length;i++){
-            str=rev(arr[i]);
-            word+=str+" ";
+            //str=;
+            word+=rev(arr[i])+" ";
         }
         return word.trim();
     }
