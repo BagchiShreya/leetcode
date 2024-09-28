@@ -4,8 +4,8 @@ class Solution {
         int ind,diff=0,sum=0;
         for(int i=0;i<s.length();i++){
             ch=s.charAt(i);
-            ind=t.indexOf(ch);
-            diff=i-ind;
+            //d=t.indexOf(ch);
+            diff=i-t.indexOf(ch);
             sum+=Math.abs(diff);
         }
         return sum;
