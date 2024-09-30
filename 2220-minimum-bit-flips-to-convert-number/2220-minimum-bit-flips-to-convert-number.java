@@ -4,7 +4,7 @@ class Solution {
         int xor = start ^ goal;
 
         while(xor!=0){
-            ans += xor & 1;
+            ans +=xor & 1;
             xor >>=1;
         }
         return ans;
